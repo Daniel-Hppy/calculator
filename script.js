@@ -72,3 +72,16 @@ clear.addEventListener("click", () => {
     const newDisplay = display.slice(0, -1);
     input.value = newDisplay;
 });
+
+document.addEventListener("keydown", (event) => {
+    if (event.key.length === 1) {
+        input.value += event.key;
+    }else if (event.key === 'Backspace'){
+        input.value = input.value.slice(0, -1);
+    }else if (event.key === 'Enter'){
+        const result = operate();
+        if (result !== undefined){
+            input.value = result;
+        }
+    }
+});
