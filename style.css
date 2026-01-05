@@ -38,3 +38,8 @@ button {
     font-size: 24px;
     font-weight: bold;
 }
+
+#zero,
+#equal {
+    width: 200px;
+}
