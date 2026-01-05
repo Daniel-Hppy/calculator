@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     margin: 0px;
@@ -11,6 +15,7 @@ body {
     width: 400px;
     background-color: rgb(29, 29, 29, 0.9);
     padding: 20px;
+    margin-top: 100px;
 }
 
 .display-container {
@@ -28,18 +33,35 @@ body {
 .button-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(29, 29, 29, 0.9);
+    flex: 1;
 }
 
 button {
-    height: 100px;
-    width: 100px;
+    height: 89px;
+    width: 89px;
     border-radius: 10px;
     font-size: 24px;
     font-weight: bold;
+    border: none;
+    margin: 0.5px;
+    background-color: rgb(237, 237, 237);
 }
+
+
 
 #zero,
 #equal {
-    width: 200px;
+    width: 178px;
+}
+
+#equal {
+    background-color: rgb(81, 158, 81);
+}
+
+.operator {
+    background-color: rgb(92, 179, 92);
+}
+
+.specialKey {
+    background-color: rgb(215, 215, 215);
 }
